@@ -1,0 +1,20 @@
+// schema.prisma
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model NotificationLog {
+  id        String   @id @default(uuid())
+  recipient String
+  channel   String   // EMAIL, SMS
+  status    String   // QUEUED, SENT, FAILED
+  payload   Json
+  createdAt DateTime @default(now())
+
+  @@index([status]) // Optimize for dashboard queries [cite: 97]
+}

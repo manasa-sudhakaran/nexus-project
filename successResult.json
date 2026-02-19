@@ -1,0 +1,20 @@
+{
+  "status": "success",
+  "message": "Data fetched successfully",
+  "data": [
+    {
+        "data": "1",
+        "type": "sms-data",
+        "message": "download",
+        "payload": "data",
+        "status": "queue"
+    },
+    {
+        "data": "2",
+        "type": "sms-data",
+        "message": "download",
+        "payload": "data",
+        "status": "queue"
+    }
+  ]
+}

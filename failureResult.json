@@ -1,0 +1,20 @@
+{
+  "status": "failed",
+  "message": "Data failed due to error",
+  "data": [
+    {
+        "data": "1",
+        "type": "sms-data",
+        "message": "download",
+        "payload": "data",
+        "acknowledged": "queue"
+    },
+    {
+        "data": "2",
+        "type": "sms-data",
+        "message": "download",
+        "payload": "data",
+        "acknowledged": "queue"
+    }
+  ]
+}
