@@ -1,16 +1,16 @@
-# 🚀 Project Nexus – Zero-Cost Event-Driven Notification Engine
+# Project Nexus – Event-Driven Notification Engine
 
-> ⚠️ **Status: Under Active Development**
+> **Status: Under Active Development**
 >
 > This project is currently in progress. Core architecture and
 > features are being added iteratively. APIs and deployment steps may change.
 
 ---
 
-## 📌 Overview
+## Overview
 
-Project Nexus is a **scalable, event-driven notification engine** designed using
-**Enterprise Integration Patterns** while running entirely on **Free-Tier cloud infrastructure**.
+Project Nexus is a scalable, event-driven notification engine designed using
+Enterprise Integration Patterns while running entirely on cloud infrastructure.
 
 It demonstrates how to achieve:
 
@@ -18,13 +18,12 @@ It demonstrates how to achieve:
 - Reactive processing
 - Real-time UI updates
 
-➡️ **without microservice hosting cost**
-
+**without microservice hosting cost**
 using the **Modular Monolith pattern**.
 
 ---
 
-## 🧠 Architecture Philosophy
+## Architecture Philosophy
 
 To achieve *“Microservices logic without microservices cost”*:
 
@@ -34,12 +33,11 @@ To achieve *“Microservices logic without microservices cost”*:
 This allows:
 
 - Independent scaling in the future
-- Zero-cost development environment
 - Production-grade design
 
 ---
 
-## 🏗️ High-Level Architecture
+## High-Level Architecture
 
 ### Flow
 
@@ -52,9 +50,9 @@ This allows:
 
 ---
 
-## 🧩 System Components
+## System Components
 
-### 🔹 Backend (NestJS – Modular Monolith)
+### Backend (NestJS – Modular Monolith)
 
 #### API Module
 - GraphQL endpoint
@@ -69,7 +67,7 @@ This allows:
 
 ---
 
-### 🔹 Frontend (Next.js 14)
+### Frontend (Next.js 14)
 
 - Notification log dashboard
 - GraphQL query for initial data
@@ -77,7 +75,7 @@ This allows:
 
 ---
 
-## ☁️ Zero-Cost Infrastructure Stack
+## Infrastructure Stack
 
 | Component  | Provider |
 |------------|----------|
@@ -87,11 +85,9 @@ Database     | Neon PostgreSQL
 Queue        | CloudAMQP (RabbitMQ)  
 Cache / WS   | Upstash Redis  
 
-As described in the Engineering Design Document :contentReference[oaicite:0]{index=0}
-
 ---
 
-## ⚙️ Core Tech Stack
+## Core Tech Stack
 
 ### Backend
 - NestJS
@@ -108,9 +104,9 @@ As described in the Engineering Design Document :contentReference[oaicite:0]{ind
 
 ---
 
-## 🔥 Key Features (In Progress / Planned)
+## Key Features (In Progress / Planned)
 
-### 🚧 In Progress
+### In Progress
 - Hybrid NestJS application (API + Worker in one process)
 - RabbitMQ integration
 - Event consumer
@@ -118,7 +114,7 @@ As described in the Engineering Design Document :contentReference[oaicite:0]{ind
 - Bulk insert with Prisma
 - Dashboard UI enhancements
 
-### 🗺️ Planned
+### Planned
 - Notification log schema
 - GraphQL subscriptions
 - Deployment automation
@@ -130,7 +126,7 @@ As described in the Engineering Design Document :contentReference[oaicite:0]{ind
 
 ---
 
-## 🗃️ Database Schema
+## Database Schema
 
 ```prisma
 model NotificationLog {
